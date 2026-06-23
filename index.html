@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dammy's Landing page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#22D3EE",
+              surface: "#161B22",
+              dark: "#0D1117",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black">
+    <nav
+      class="bg-black flex justify-between px-9 py-4 items-center border-b border-white/10"
+    >
+      <a class="text-blue-400 text-4xl font-bold hover:text-white">Dammy</a>
+      <ul class="flex text-white gap-6">
+        <li>
+          <a class="hover:text-blue-400">About</a>
+        </li>
+        <li>
+          <a class="hover:text-blue-400">Skills</a>
+        </li>
+        <li>
+          <a class="hover:text-blue-400">Projects</a>
+        </li>
+        <li>
+          <a class="hover:text-blue-400">Contacts</a>
+        </li>
+      </ul>
+      <a
+        class="text-blue-400 text-4xl border border-blue-400 rounded-full px-6 py-3 hover:bg-blue-400 hover:text-black"
+        >Hire me</a
+      >
+    </nav>
+
+    <section id="hero"></section>
+    <section id="aboutMe"></section>
+    <section id="skills"></section>
+    <section id="projecs"></section>
+    <section id="contacts"></section>
+  </body>
+</html>
